@@ -14,4 +14,5 @@ export const fontSize = {
    title: "22px",
    subtitle: "16px",
    mini_txt: "11px",
+   txt_about: "12px",
 }

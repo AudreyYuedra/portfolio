@@ -15,4 +15,8 @@ export const mixins = {
       display: flex;
       flex-direction: column;
    `,
+   rowCenter: () => css`
+      display: row;
+      justify-content: center;
+   `,
 }
