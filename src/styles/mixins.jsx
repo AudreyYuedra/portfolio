@@ -11,4 +11,8 @@ export const mixins = {
       justify-content: center;
       align-items: center;
    `,
+   column: () => css`
+      display: flex;
+      flex-direction: column;
+   `,
 }
