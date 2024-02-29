@@ -1,4 +1,5 @@
 import Exp from "../components/Exp"
+import ProjectData from "../utils/ProjectData.json"
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
@@ -87,41 +88,9 @@ export default function About() {
 
          <Pro>
             <h3>Expéricence</h3>
-            <Exp
-               title="Argentbank"
-               content="Conception d'une application bancaire basé sur React, et implémentation d'un système d'identification, d'un tableau de bord utilisateur et d'une gention de données via Redux."
-            />
-
-            <Exp
-               title="724Events"
-               content="Débogage d'un site web d'une agence d'événementiels, avec une analyse du code, l'identification et la résolution de sproblèmes, et la finalisation d'un cahier de recettes."
-            />
-
-            <Exp
-               title="Nina Carducci"
-               content="Amélioration de la performance global du site d'une photographe, avec le renforecment de son référencement sur les moteurs de recherches et l'optimisation de l'accessibilité."
-            />
-
-            <Exp
-               title="Kasa"
-               content="Intégration du FrontEnd en react d'une application de location immobilière, incluant des fiches de logements, un carrousel, et des animation de type collapse."
-            />
-
-            <Exp
-               title="MenuMaker by Qwenta"
-               content="Développement d'une application de création de menus avec l'élaboration de la solution technique, la documentation des spécifications techniques, le découpage des fonctionnalités en
-                  tâches, et le suivi du projet via un outil de gestion."
-            />
-
-            <Exp
-               title="ArchiWebos - Sophie Bluel"
-               content="Création d'un site web portfolio d'une architecte, en Javascript avec un système de filtres de projets par catégorie, un système d'ajout et suppression de projets, et l'utilisation
-                  d'une API pour générer dynamiquement des éléments du site."
-            />
-
-            <Exp title="OhMyFood" content="Mise en place du FrontEnd d'un site en mobile first pour une plateforme de restaurants, avec l'implémention d'animation en Sass." />
-
-            <Exp title="Booki" content="Création de la page d'accueil d'une agence de voyage, en HTML et CSS, avec un design responsive." />
+            {ProjectData.map((data) => (
+               <Exp cover={data.cover} title={data.title} />
+            ))}
          </Pro>
       </Main>
    )

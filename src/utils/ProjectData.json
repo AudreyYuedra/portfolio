@@ -1,0 +1,122 @@
+[
+   {
+      "id": "001",
+      "title": "Booki",
+      "cover": "",
+      "image": "",
+      "resume": "Création de la page d'accueil d'une agence de voyage, en HTML et CSS, avec un design responsive.",
+      "customer": "Agence de voyage souhaitant développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+      "présentation": "souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+      "goal": "Le principal défi était de rendre le projet compatible avec diverses tailles d'écran tout en respectant les spécifications de conception. J'ai utilisé flexbox pour créer une mise en page adaptable, garantissant ainsi une expérience utilisateur uniforme sur tous les appareils. J'ai travaillé en étroite collaboration avec les concepteurs pour intégrer harmonieusement les éléments visuels dans la mise en page, assurant ainsi une présentation esthétique et fonctionnelle sur les écrans larges de bureau, les tablettes et les smartphones.",
+      "techno": ["HTML5", "CSS3", "Responsive Web Design", "Figma"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/Booki_OC_P3/tree/master",
+         "web": "https://audreyyuedra.github.io/Booki_OC_P3/"
+      }
+   },
+   {
+      "id": "002",
+      "title": "OhMyFood",
+      "cover": "",
+      "image": "",
+      "resume": "Mise en place du FrontEnd d'un site en mobile first pour une plateforme de restaurants, avec l'implémention d'animation en Sass.",
+      "customer": "Startup de restauration new-yorkaise voulant s'implanter à Paris",
+      "présentation": "OhMyFood est une startup de restauration qui souhaite développer un site répertoriant les menus de restaurants gastronomiques. Mon rôle en tant que développeuse était de créer le site en respectant les maquettes fournies par l'équipe UX designer.",
+      "goal": "Le projet a été conçu en adoptant une approche 'mobile first', ce qui signifie que j'ai priorisé l'optimisation de l'expérience utilisateur sur les appareils mobiles. Cette stratégie garantit que les utilisateurs bénéficient d'une expérience fluide et réactive, quel que soit l'appareil qu'ils utilisent, allant des smartphones aux ordinateurs de bureau. De plus, pour rendre le site encore plus attrayant, j'ai intégré des animations fluides et naturelles. Ces animations ont été soigneusement créées pour améliorer l'interactivité du site, offrant ainsi aux visiteurs une expérience engageante et immersive.",
+      "techno": ["HTML5", "SASS", "Responsive Web Design", "Animations CCS", "Figma"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/OhMyFood_OC_P4",
+         "web": "https://audreyyuedra.github.io/OhMyFood_OC_P4/"
+      }
+   },
+   {
+      "id": "003",
+      "title": "ArchiWebos - Sophie Bluel",
+      "cover": "",
+      "image": "",
+      "resume": "Création d'un site web portfolio d'une architecte, en Javascript avec un système de filtres de projets par catégorie, un système d'ajout et suppression de projets, et l'utilisation d'une API pour générer dynamiquement des éléments du site.",
+      "customer": "Sophie Bluel, architecte d'intérieur",
+      "présentation": "En tant que développeuse front-end, j'ai aidé une équipe à finaliser le nouveau site internet d'une architecte d'intérieur. J'étais chargée de développer plusieurs fonctionnalités clés pour le site.",
+      "goal": "Mon rôle a inclus la création de la page de présentation des travaux de l'architecte, avec des options de filtrage par catégorie, le développement de la page de connexion sécurisée de l'administrateur en utilisant JWT (JSON Web Tokens) pour l'authentification, ainsi que la conception d'une modale permettant à l'architecte d'ajouter ou de supprimer des projets. J'ai utilisé JavaScript pour générer dynamiquement les éléments en communiquant avec une API, ce qui a permis de récupérer, ajouter et supprimer des travaux. Tout au long du projet, nous avons utilisé un tableau Kanban détaillé pour organiser notre travail de manière efficace.",
+      "techno": ["HTML5", "SASS", "Javascript", "API", "Swagger", "JWT", "Node.js", "Figma"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/ArchiWebos_OC_P6/tree/master",
+         "web": "https://audreyyuedra.github.io/ArchiWebos_OC_P6/"
+      }
+   },
+   {
+      "id": "004",
+      "title": "MenuMaker by Qwenta",
+      "cover": "",
+      "image": "",
+      "resume": "Développement d'une application de création de menus avec l'élaboration de la solution technique, la documentation des spécifications techniques, le découpage des fonctionnalités en tâches, et le suivi du projet via un outil de gestion.",
+      "customer": "Qwenta, entreprise spécialisée dans les solutions numériques pour la restauration.",
+      "présentation": "Au sein de l'agence Webgencia, j'ai pris en charge la préparation et la planification d'un projet de développement particulier : la création du Menu Maker pour l'entreprise Qwenta. Le Menu Maker est un outil novateur dédié aux restaurateurs, simplifiant la conception et la mise en page de leurs menus. ",
+      "goal": "Au sein de l'agence Webgencia, j'ai pris en charge la préparation et la planification d'un projet de développement particulier : la création du Menu Maker pour l'entreprise Qwenta. Le Menu Maker est un outil novateur dédié aux restaurateurs, simplifiant la conception et la mise en page de leurs menus. ",
+      "techno": ["Méthode Agile", "Planification de projet", "Spécifications Techniques", "Spécifications Fonctionnelles", "Kanban", "Trello", "Feedly"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/ArchiWebos_OC_P6/tree/master",
+         "web": ""
+      }
+   },
+   {
+      "id": "005",
+      "title": "Kasa",
+      "cover": "",
+      "image": "",
+      "resume": "Intégration du FrontEnd en react d'une application de location immobilière, incluant des fiches de logements, un carrousel, et des animations de type collapse.",
+      "customer": "Au sein de l'agence Webgencia, j'ai pris en charge la préparation et la planification d'un projet de développement particulier : la création du Menu Maker pour l'entreprise Qwenta. Le Menu Maker est un outil novateur dédié aux restaurateurs, simplifiant la conception et la mise en page de leurs menus. ",
+      "présentation": "J'ai travaillé en tant que développeuse front-end sur le projet Kasa, pour une refonte totale du site, incluant une transition de ASP.NET à une stack Javascript moderne. Mon rôle était de concevoir une plateforme web en utilisant React pour le côté front-end, et Node.js pour le côté backend, ainsi que des maquettes fournies par le designer.",
+      "goal": "L'objectif était de moderniser la plateforme existante, en React, pour optimiser l'expérience utilisateur sur différentes tailles d'écran. J'ai enrichi l'interactivité du site en intégrant des animations CSS tout en introduisant des éléments avancés, comme la création d'un carrousel pour afficher les images des logements, l'implémentation d'un collapse pour améliorer l'UX, et la gestion dynamique des fiches logements à partir de données internes. De plus, j'ai utilisé Sass pour améliorer la gestion des styles.",
+      "techno": ["React", "SASS", "Animations CSS", "Node.js", "Responsive Web Design", "Figma"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/Kasa_OC_P8",
+         "web": "https://audreyyuedra.github.io/Kasa_OC_P8/"
+      }
+   },
+   {
+      "id": "006",
+      "title": "Nina Carducci",
+      "cover": "",
+      "image": "",
+      "resume": "Amélioration de la performance global du site d'une photographe, avec le renforecment de son référencement sur les moteurs de recherches et l'optimisation de l'accessibilité.",
+      "customer": "Nina Carducci, phototgraphe professionnelle",
+      "présentation": "Nina Carducci est le site web d'une photographe professionnelle spécialisée dans les portraits et la photographie événementielle. Le site a pour but de présenter le portfolio de la photographe et de mettre en valeur ses réalisations.",
+      "goal": "Le projet visait à améliorer la performance globale du site, réduire le temps de chargement, et renforcer son référencement sur les moteurs de recherche. Mon intervention a inclus l'optimisation des images, la refonte du code et de la structure du site, la mise en place du référencement local avec Schema.org, et l'ajout des métas pour les réseaux sociaux. De plus, j'ai réalisé une optimisation du SEO du site, intégré le Rich Snippet pour une meilleure visibilité sur les moteurs de recherche, et effectué une analyse approfondie avec Wave pour garantir des performances optimales. Ces améliorations ont abouti à une expérience utilisateur plus fluide, une meilleure visibilité en ligne, et la possibilité d'attirer de nouveaux clients, notamment grâce à l'optimisation de Wave pour une meilleure accessibilité.",
+      "techno": ["Optimisation Web", "SEO", "Accessibilité", "Référencement Local", "Rich Snippet", "Lighthouse", "Wave"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/Nina_Carducci_OC_P9",
+         "web": "https://audreyyuedra.github.io/Nina_Carducci_OC_P9/"
+      }
+   },
+   {
+      "id": "007",
+      "title": "724Events",
+      "cover": "",
+      "image": "",
+      "resume": "Débogage d'un site web d'une agence d'événementiels, avec une analyse du code, l'identification et la résolution de sproblèmes, et la finalisation d'un cahier de recettes.",
+      "customer": "L'agence évènementielle 724events.",
+      "présentation": "724events, une agence événementielle, avait lancé une refonte cruciale de son site vitrine. Après la validation du design, un développeur freelance a été recruté pour l'intégration, mais il a dû quitter le projet en cours. J'ai relevé le défi de résoudre les problèmes techniques et d'optimiser le site pour répondre pleinement aux besoins de l'agence.",
+      "goal": "Ma mission a été d'effectuer un débogage complet et d'optimiser le site web de 724events. J'ai commencé par une analyse approfondie du code source existant, identifiant ainsi les problèmes techniques qui entravaient les performances du site. Mon objectif était de garantir que le site soit fluide et réactif pour les visiteurs. Pour atteindre cet objectif, j'ai utilisé des tests unitaires pour vérifier chaque composant du site. Les React Dev Tools ont été essentielles pour analyser et optimiser le code React. Grâce à ces outils, j'ai pu cibler les zones spécifiques nécessitant des améliorations. En parallèle, j'ai finalisé le cahier de recette, créant des scénarios détaillés pour vérifier que chaque fonctionnalité du site fonctionnait comme prévu. Cela incluait des tests de navigation, de formulaire, de performance, et bien d'autres. Mon travail a permis d'assurer que le site réponde aux normes de qualité les plus élevées, offrant ainsi une expérience optimale aux utilisateurs.",
+      "techno": ["Débogage", "Tests unitaires", "React Dev Tools"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/724Events_OC_P10",
+         "web": "https://audreyyuedra.github.io/724Events_OC_P10/"
+      }
+   },
+   {
+      "id": "008",
+      "title": "Argentbank",
+      "cover": "",
+      "image": "",
+      "resume": "Conception d'une application bancaire basé sur React, et implémentation d'un système d'identification, d'un tableau de bord utilisateur et d'une gention de données via Redux.",
+      "customer": "Banque en ligne qui souhaite évoluer dans le secteur bancaire",
+      "présentation": "En tant que développeuse front-end chez Argent Bank, ma mission principale était de créer un tableau de bord utilisateur avec un système d'authentification en utilisant React et Redux. Cette tâche impliquait la migration d'un site web existant en HTML/CSS vers cette nouvelle plateforme.",
+      "goal": "En tant que membre de l'équipe Argent Bank, j'ai joué un rôle central dans la mise en place de l'authentification utilisateur avec JWT (JSON Web Tokens) et Axios pour des appels API sécurisés. J'ai également dirigé la gestion des données via Redux, en permettant notamment aux utilisateurs de récupérer leurs informations en se connectant mais également pouvoir en modifier certaines s'ils le souhaitent. L'utilisation de Swagger a facilité la conception et la documentation des API, accélérant le développement de nouvelles fonctionnalités et renforçant la sécurité, les performances et l'expérience utilisateur dans l'application Argent Bank. Mon rôle comprenait aussi la définition des routes pour les transactions dans l'éditeur de Swagger, ce qui impliquait de choisir les méthodes HTTP appropriées, telles que GET, PUT ou DELETE, pour simplifier leur gestion future. J'ai également contribué au Green Code en optimisant les images pour améliorer les performances de l'application et en créant des composants réutilisables pour favoriser les bonnes pratiques de développement.",
+      "techno": ["React", "Redux", "Axios", "JWT", "Swagger", "MongoDB", "Green Code"],
+      "links": {
+         "github": "https://github.com/AudreyYuedra/ArgentBank_OC_P11",
+         "web": "https://audreyyuedra.github.io/ArgentBank_OC_P11/"
+      }
+   }
+]
