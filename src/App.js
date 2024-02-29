@@ -9,8 +9,6 @@ import Techno from "./pages/Techno"
 import Contact from "./pages/Contact"
 import Error from "./pages/Error"
 
-import "./App.css"
-
 const router = createBrowserRouter([
    {
       path: "/",
