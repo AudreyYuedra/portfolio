@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const StickyHeader = styled.header`
-   width: 98, 2%;
+   width: 98.5%;
    height: 60px;
    background-color: ${colors.bg_tertiary};
    ${mixins.rowSpaceBetween};
