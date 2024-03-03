@@ -1,4 +1,4 @@
-import Card from ""
+import Card from "../components/Card"
 import ProjetData from "../utils/ProjectData.json"
 
 import styled from "styled-components"
@@ -19,6 +19,7 @@ export default function Projects() {
                <Card title={data.title} github={data.links.github} web={data.links.web} />
             ))}
          </section>
+         {/* Modale*/}
       </main>
    )
 }
