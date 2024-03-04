@@ -1,0 +1,72 @@
+[
+   {
+      "id": "1",
+      "name": "HTML5",
+      "logo": "../assets/Logos/FrontEnd/HTML5.webp"
+   },
+   {
+      "id": "2",
+      "name": "CSS3",
+      "logo": "../assets/Logos/FrontEnd/CSS3.webp"
+   },
+   {
+      "id": "3",
+      "name": "Javascript",
+      "logo": "../assets/Logos/FrontEnd/Javascript.webp"
+   },
+   {
+      "id": "4",
+      "name": "Sass",
+      "logo": "../assets/Logos/FrontEnd/Sass.png"
+   },
+   {
+      "id": "5",
+      "name": "React",
+      "logo": "../assets/Logos/FrontEnd/React.webp"
+   },
+   {
+      "id": "6",
+      "name": "Redux",
+      "logo": "../assets/Logos/FrontEnd/Redux.webp"
+   },
+   {
+      "id": "7",
+      "name": "Styled-Components",
+      "logo": "../assets/Logos/FrontEnd/StyledComponents.png"
+   },
+   {
+      "id": "8",
+      "name": "Node.js",
+      "logo": "../assets/Logos/BackEnd/NodeJS.png"
+   },
+   {
+      "id": "9",
+      "name": "MongoDB",
+      "logo": "../assets/Logos/BackEnd/MongoDB.webp"
+   },
+   {
+      "id": "10",
+      "name": "Visual Studio Code",
+      "logo": "../assets/Logos/Autres/VSC.webp"
+   },
+   {
+      "id": "11",
+      "name": "GitHub",
+      "logo": "../assets/Logos/Autres/GitHub.webp"
+   },
+   {
+      "id": "12",
+      "name": "Trello",
+      "logo": "../assets/Logos/Autres/Trello.png"
+   },
+   {
+      "id": "13",
+      "name": "Figma",
+      "logo": "../assets/Logos/Autres/Figma.png"
+   },
+   {
+      "id": "14",
+      "name": "Slack",
+      "logo": "../assets/Logos/Autres/Slack.png"
+   }
+]
