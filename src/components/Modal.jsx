@@ -1,5 +1,3 @@
-import ProjetData from "../utils/ProjectData.json"
-
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
@@ -12,9 +10,9 @@ const ModalBox = styled.dialog`
    z-index: 3;
    border: none;
    border-radius: 25px;
-   background-color: ${colors.bg_secondary};
+   background-color: ${colors.txt_primary};
    ${mixins.column};
-   padding: 15px;
+   padding: 15px 30px 40px 30px;
    &::backdrop {
       background-color: rgba(255, 255, 255, 0.8);
    }
@@ -36,15 +34,35 @@ const Img = styled.img`
    align-self: center;
    margin-bottom: 20px;
 `
+const Text = styled.p`
+   color: ${colors.bg_tertiary};
+   margin-bottom: 8px;
+   & span {
+      color: ${colors.bg_primary};
+      font-size: ${fontSize.subtitle};
+      font-weigth: 700;
+      font-family: ${fontFamily.ff_secondary};
+      margin-left: 15px;
+   }
+`
 
-export default function Modal({ onClick }) {
+export default function Modal({ onClick, data }) {
    return (
       <ModalBox>
          <i className="fa-solid fa-xmark" onClick={onClick}></i>
-         <Img src={ProjetData.image} />
-         <p>Client : {ProjetData.customer}</p>
-         <p>Présentation : {ProjetData.presentation}</p>
-         <p>Objectifs : {ProjetData.goal}</p>
+         <Img src={data.image} />
+         <Text>
+            <span>Client : </span>
+            {data.customer}
+         </Text>
+         <Text>
+            <span>Présentation : </span>
+            {data.presentation}
+         </Text>
+         <Text>
+            <span>Objectifs : </span>
+            {data.goal}
+         </Text>
       </ModalBox>
    )
 }

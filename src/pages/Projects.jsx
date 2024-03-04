@@ -27,6 +27,13 @@ const Gallery = styled.section`
 
 export default function Projects() {
    const [isOpen, setIsOpen] = useState(false) // modale fermée par défaut
+   const [selectedProject, setSelectedProject] = useState(null)
+
+   const selectDataProject = (data) => {
+      setSelectedProject(data)
+      setIsOpen(true)
+   }
+
    return (
       <Main>
          <Title>Mes projets</Title>
@@ -34,11 +41,12 @@ export default function Projects() {
             {ProjetData.map((data) => (
                <Card
                   key={data.id}
+                  id={data.id}
                   title={data.title}
                   github={data.links.github}
                   web={data.links.web}
                   onClick={() => {
-                     setIsOpen(true)
+                     selectDataProject(data)
                   }}
                />
             ))}
@@ -47,7 +55,7 @@ export default function Projects() {
             ""
          ) : (
             <Modal
-               key={ProjetData.id}
+               data={selectedProject}
                onClick={() => {
                   setIsOpen(false)
                }}
