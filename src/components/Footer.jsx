@@ -2,14 +2,17 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontSize } from "../styles/variables"
 const MiniFooter = styled.footer`
-   position: absolute;
-   bottom: 0px;
    width: 100%;
    height: 25px;
-   background-color: ${colors.bg_tertiary};
+   position: absolute;
+   bottom: 0px;
    ${mixins.totalCenter};
-   font-size: ${fontSize.mini_txt};
-   color: ${colors.txt_primary};
+   background-color: ${colors.light_black};
+   border-top: solid 2px ${colors.dark_grey};
+   & p {
+      font-size: ${fontSize.mini_txt};
+      color: ${colors.txt_primary};
+   }
 `
 
 export default function Footer() {
