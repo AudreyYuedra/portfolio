@@ -5,7 +5,6 @@ import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const Main = styled.main`
    margin: 70px 0;
-   position: relative;
    ${mixins.column};
    ${mixins.totalCenter};
 `

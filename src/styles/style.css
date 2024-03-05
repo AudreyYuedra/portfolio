@@ -9,4 +9,5 @@
 body {
    min-height: 100dvh;
    background-color: #04012c;
+   position: relative;
 }

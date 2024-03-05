@@ -5,7 +5,7 @@ import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const Main = styled.main`
    ${mixins.totalCenter};
-   margin: 13.86% 0;
+   margin: 50px 0;
    position: relative;
 `
 const Shape = styled.div`

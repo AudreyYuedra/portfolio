@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const Main = styled.main`
-   height: 98.2%;
    display: flex;
    flex-direction: row;
    padding: 30px 60px;

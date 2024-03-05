@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontSize } from "../styles/variables"
 const MiniFooter = styled.footer`
+   position: absolute;
+   bottom: 0px;
    width: 100%;
    height: 25px;
    background-color: ${colors.bg_tertiary};
