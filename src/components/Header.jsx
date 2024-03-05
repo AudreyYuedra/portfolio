@@ -4,45 +4,79 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const StickyHeader = styled.header`
-   width: 98.5%;
+   width: 100%;
    height: 60px;
-   background-color: ${colors.bg_tertiary};
+   background-color: ${colors.light_black};
    ${mixins.rowSpaceBetween};
    align-items: center;
    position: sticky;
-   padding: 0 10px 0 10px;
+   box-shadow: 0 0 25px ${colors.dark_grey};
 `
-/* const SlyledLink = styled(NavLink)`
-   padding: 5px;
-   font-family: ${fontFamily.ff_secondary};
-   font-size: ${fontSize.subtitle};
-   color: ${colors.txt_primary};
+const Name = styled.div`
+   height: 50px;
+   margin-left: 20px;
+   & p {
+      font-family: ${fontFamily.Satisfy};
+      font-size: ${fontSize.subtitle};
+   }
+`
+const P2 = styled.p`
+   position: relative;
+   left: 10px;
+   top: -8px;
+`
+const SlyledLink = styled.ul`
+   display: flex;
+   align-items: center;
+   list-style-type: none;
+   & li {
+      padding: 0 5px;
+      font-family: ${fontFamily.Satisfy};
+      color: ${colors.light_blue};
+      text-decoration: none;
+      &:hover {
+         cursor: pointer;
+         color: ${colors.pastel_blue};
+         text-decoration: none;
+      }
+   }
+   .current {
+      color: ${colors.pastel_blue};
+      text-decoration: none;
+   }
+`
+const NavIcons = styled.nav`
+   margin-right: 20px;
    &:hover {
       cursor: pointer;
    }
-` */
+`
 const Icon = styled.i`
    font-size: 24px;
-   color: ${colors.txt_primary};
-   padding: 0 3px 0 3px;
+   color: ${colors.white};
+   padding: 0 4px;
 `
 
 export default function Header() {
    return (
       <StickyHeader>
-         <p>HEADER !!!</p>
-         <nav>
-            blabla
-            {/* <SlyledLink href="/">Accueil</SlyledLink>
-            <SlyledLink href="/About">À Propos</SlyledLink>
-            <SlyledLink href="/Projects">Projets</SlyledLink>
-            <SlyledLink href="/Techno">Technologies</SlyledLink>
-            <SlyledLink href="/Contact">Contact</SlyledLink> */}
-         </nav>
-         <nav>
+         <Name>
+            <p>Audrey</p>
+            <P2>Luquet</P2>
+         </Name>
+
+         <SlyledLink>
+            {/* <NavLink href="/">Accueil</NavLink>
+            <NavLink href="/About">À Propos</NavLink>
+            <NavLink href="/Projects">Projets</NavLink>
+            <NavLink href="/Techno">Technologies</NavLink>
+   <NavLink href="/Contact">Contact</NavLink> */}
+         </SlyledLink>
+
+         <NavIcons>
             <Icon className="fa-brands fa-github" alt="logo de GitHub"></Icon>
             <Icon className="fa-brands fa-linkedin" alt="logo de LinkedIn"></Icon>
-         </nav>
+         </NavIcons>
       </StickyHeader>
    )
 }
