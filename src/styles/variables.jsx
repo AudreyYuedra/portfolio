@@ -15,6 +15,7 @@ export const colors = {
 
 export const fontSize = {
    title_h2: "36px",
+   title_h3: "30px",
    subtitle: "18px",
    mini_txt: "12px",
 }

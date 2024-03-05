@@ -1,10 +1,14 @@
 import styled from "styled-components"
+import { colors, fontSize } from "../styles/variables"
 const ExpPro = styled.article`
-   padding: 10px;
+   padding: 5px 10px;
    margin-bottom: 15px;
    & h4 {
-      txt-decoration: bold;
+      text-decoration: underline ${colors.light_blue} 2px;
       margin-bottom: 5px;
+   }
+   & p {
+      font-size: ${fontSize.subtitle};
    }
 `
 

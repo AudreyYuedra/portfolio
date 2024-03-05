@@ -3,121 +3,95 @@ import ProjectData from "../utils/ProjectData.json"
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
-import { colors, fontFamily, fontSize } from "../styles/variables"
+import { colors, fontSize } from "../styles/variables"
 const Main = styled.main`
-   margin: 50px 0;
-`
-const Title = styled.h2`
-   display: flex;
-   justify-content: center;
-   font-family: ${fontFamily.ff_secondary};
-   font-size: ${fontSize.title};
-   color: ${colors.bg_secondary};
-   margin-bottom: 35px;
+   margin: 70px 0;
+   & h2 {
+      ${mixins.titleH2};
+   }
 `
 const ContainerCol = styled.div`
    ${mixins.rowSpaceBetween};
+   padding: 10px;
+   margin-top: 30px;
 `
 const Perso = styled.section`
    width: 48%;
    ${mixins.column};
-   padding: 20px;
-   position: relative;
-   z-index: 2;
+   padding: 0 20px 20px 20px;
+   border-right: dashed 1px ${colors.dark_grey};
 `
 const Prez = styled.article`
-   margin-top: 50px;
-   margin-bottom: 70px;
-`
-const P1 = styled.p`
-   width: 60%;
-   position: relative;
-   left: 195px;
-   margin-bottom: 5px;
-`
-const P2 = styled.p`
-   width: 90%;
-   position: relative;
-   left: 70px;
-   margin-bottom: 5px;
-`
-const P3 = styled.p`
-   width: 94%;
-   position: relative;
-   left: 20px;
-   margin-bottom: 5px;
-`
-const P4 = styled.p`
-   width: 94%;
-   position: relative;
-   left: 75px;
-   margin-bottom: 5px;
-   font-style: italic;
-`
-const Shape = styled.div`
-   width: 48.5%;
-   height: 300px;
-   background-color: ${colors.bg_secondary};
-   opacity: 0.6;
-   border-radius: 65% 35% 42% 58% / 67% 40% 60% 33%;
-   margin-left: 10px;
-   position: absolute;
-   top: 10%;
-`
-const Scolaire = styled.article`
-   margin-bottom: 20px;
+   margin: 90px 20px;
    & p {
       margin-bottom: 10px;
    }
+`
+const Italic = styled.p`
+   margin-left: 5px;
+   font-style: italic;
+}`
+const Scolaire = styled.article`
+   margin: 0 0 20px 10px;
+   & p {
+      margin-bottom: 15px;
+   }
    & span {
-      font-size: ${fontSize.txt_about};
+      font-size: ${fontSize.subtitle};
+      margin-left: 10px;
    }
 `
 const Langue = styled.article`
    margin-bottom: 20px;
    & p {
       margin-bottom: 10px;
+      & span {
+         margin-left: 5px;
+         font-style: italic;
+      }
    }
 `
-const CV = styled.p`
+/* const CV = styled.p`
    margin-top: 50px;
    & i {
       margin-left: 10px;
    }
-`
+` */
 const Pro = styled.section`
    width: 48%;
    ${mixins.column};
-   padding: 20px;
-   position: relative;
-   z-index: 2;
+   padding: 0 30px 30px 30px;
+   border-left: dashed 1px ${colors.dark_grey};
 `
 const H3 = styled.h3`
-   font-size: ${fontSize.subtitle};
-   font-weigth: 700;
-   margin-bottom: 15px;
    display: flex;
    justify-content: center;
+   font-size: ${fontSize.title_h3};
+   font-weight: 700;
+   color: ${colors.pastel_blue};
+   margin-bottom: 20px;
 `
 
 export default function About() {
    return (
       <Main>
-         <Title>À Propos</Title>
+         <h2>À Propos de moi</h2>
+
          <ContainerCol>
             <Perso>
                <Prez>
-                  <P1>Je suis située en région parisienne, plus précisément en Seine-et-marne.</P1>
-                  <P2>
+                  <p>Je suis située en région parisienne, plus précisément en Seine-et-marne.</p>
+                  <p>
                      Passionnée par l'écriture depuis de nombreuses années, j'ai décidée d'utiliser mes compétences en création pour vous aider à construire vote site web personnel ou professionnel,
                      qui est le reflet de votre histoire et de votre personnalité.
-                  </P2>
-                  <P3>
+                  </p>
+                  <p>
                      Le travail en équipe est une notion importante pour moi, les challenges ne me font pas peur, et je suis toujours prête à apprendre de nouvelles technologies afin de répondre au
                      mieux à vos demandes.
-                  </P3>
-                  <P4>Je suis disponible immédiatement et motivée à collaborer avec vous !</P4>
+                  </p>
+                  <Italic>Je suis disponible immédiatement et motivée à collaborer avec vous !</Italic>
                </Prez>
+
                <Scolaire>
                   <H3>Scolaire</H3>
                   <p>
@@ -136,19 +110,25 @@ export default function About() {
                      <span>Paris Diderot</span>
                   </p>
                </Scolaire>
+
                <Langue>
                   <H3>Langues</H3>
-                  <p>Français : langue maternelle</p>
-                  <p>Anglais : </p>
-                  <p>Japonais :</p>
+                  <p>
+                     Français : <span>langue maternelle</span>
+                  </p>
+                  <p>
+                     Anglais : <span>novice</span>
+                  </p>
+                  <p>
+                     Japonais : <span>débutante</span>
+                  </p>
                </Langue>
-               <CV>
-                  Mon CV à télécharger :{/*<Link>*/}
+               {/* <CV>
+                  Mon CV à télécharger :<Link>
                   <i className="fa-solid fa-download"></i>
-                  {/*<Link>*/}
-               </CV>
+                  </Link>
+               </CV> */}
             </Perso>
-            <Shape />
 
             <Pro>
                <H3>Expéricence</H3>
