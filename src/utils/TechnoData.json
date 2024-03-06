@@ -63,27 +63,27 @@
          {
             "id": "O1",
             "name": "Visual Studio Code",
-            "logo": "../assets/Logo/Autres/VSC.png"
+            "logo": "/public/images/Logo/Autres/VSC.png"
          },
          {
             "id": "O2",
             "name": "GitHub",
-            "logo": "../assets/Logo/Autres/GitHub.png"
+            "logo": "/public/images/Logo/Autres/GitHub.png"
          },
          {
             "id": "O3",
             "name": "Trello",
-            "logo": "../assets/Logo/Autres/Trello.png"
+            "logo": "/public/images/Logo/Autres/Trello.png"
          },
          {
             "id": "O4",
             "name": "Figma",
-            "logo": "../assets/Logo/Autres/Figma.png"
+            "logo": "/public/images/Logo/Autres/Figma.png"
          },
          {
             "id": "O5",
             "name": "Slack",
-            "logo": "../assets/Logo/Autres/Slack.png"
+            "logo": "/apublic/images/Logo/Autres/Slack.png"
          }
       ]
    }

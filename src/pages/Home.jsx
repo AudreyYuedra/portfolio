@@ -1,4 +1,4 @@
-import Moi from "../assets/Photo_Profil.webp"
+import Moi from "../utils/Photo_Profil.webp"
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"

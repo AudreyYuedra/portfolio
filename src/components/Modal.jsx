@@ -57,11 +57,11 @@ const Text = styled.p`
    }
 `
 
-export default function Modal({ onClick, data }) {
+export default function Modal({ onClick, data, src }) {
    return (
-      <ModalBox>
+      <ModalBox id={data.id}>
          <i className="fa-solid fa-xmark" onClick={onClick}></i>
-         <Img src={data.image} alt={`bannière ${data.title}`} />
+         <Img src={src} alt={`bannière ${data.title}`} />
          <Text>
             <span>Client : </span>
             {data.customer}
