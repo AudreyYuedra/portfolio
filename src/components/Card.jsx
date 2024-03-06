@@ -1,69 +1,82 @@
-import ProjetData from "../utils/ProjectData.json"
-
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const CardProject = styled.article`
    border: solid 2px red;
    width: 25%;
-   heigth: 400px;
-   background-image: ${ProjetData.cover};
+   height: 300px;
    border-radius: 25px;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: end;
    margin: 10px;
    &:hover {
-      box-shadow: 0 0 20px ${colors.txt_primary};
+      box-shadow: 0 0 20px ${colors.white};
    }
 `
-const Container = styled.div`
-   heigth: 55px;
-   background-color: pink;
-   opacity: 0.7;
-   padding: 10px;
+const Contain = styled.div`
+   height: 55px;
    ${mixins.column};
-   postion: absolute;
-   align-self: end;
-   z-index: 2;
-   border-bottom-left-radius: 25px;
-   border-bottom-right-radius: 25px;
+   ${mixins.totalCenter};
+   position: absolute;
+   z-index: 3;
+   padding-bottom: 10px;
    & h3 {
-      font-family: ${fontFamily.ff_secondary};
+      font-family: ${fontFamily.Satisfy};
       font-size: ${fontSize.subtitle};
-      display: flex;
-      justify-content: center;
-      opacity: 1;
    }
 `
 const BoxLinks = styled.div`
    display: flex;
    justify-content: center;
-   margin-top: 5px;
+   margin-top: 8px;
    padding: 0 15px;
-   opacity: 1;
    & i {
-      padding: 0 3px;
-      font-size: 14px;
+      color: ${colors.black};
+      padding: 0 4px;
+      font-size: ${fontSize.subtitle};
       &:hover {
          cursor: pointer;
       }
    }
 `
+const BGContainer = styled.div`
+   width: 100%;
+   height: 55px;
+   background-color: ${colors.pastel_blue};
+   opacity: 0.5;
+   padding: 10px;
+   z-index: 2;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+`
+const Img = styled.img`
+   width: 100%;
+   height: 100%;
+   border-radius: 25px;
+   position: absolute;
+   object-fit: cover;
+`
 
-export default function Card({ title, onClick, github, web }) {
+export default function Card({ title, onClick, github, web, img, alt }) {
    return (
       <CardProject>
-         <Container>
+         <Contain>
             <h3>{title}</h3>
             <BoxLinks>
                <i className="fa-solid fa-circle-plus" alt="ouverture de la modale" onClick={onClick}></i>
                {/*<Link to={github}>*/}
                <i className="fa-brands fa-github" alt="lien GitHub du projet"></i>
                {/*</Link>*/}
-               {/*<Link to{web}>*/}
+               {/*<Link to={web}>*/}
                <i className="fa-solid fa-link" alt="lien du site du projet"></i>
                {/*</Link>*/}
             </BoxLinks>
-         </Container>
+         </Contain>
+
+         <BGContainer />
+         <Img src={img} alt={alt} />
       </CardProject>
    )
 }

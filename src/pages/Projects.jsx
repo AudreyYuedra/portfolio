@@ -6,22 +6,18 @@ import ProjetData from "../utils/ProjectData.json"
 
 import styled from "styled-components"
 import { colors, fontFamily, fontSize } from "../styles/variables"
+import { mixins } from "../styles/mixins"
 const Main = styled.main`
-   margin: 50px 0;
-`
-const Title = styled.h2`
-   display: flex;
-   justify-content: center;
-   font-family: ${fontFamily.ff_secondary};
-   font-size: ${fontSize.title};
-   color: ${colors.bg_secondary};
-   margin-bottom: 30px;
+   margin: 70px 0;
+   & h2 {
+      ${mixins.titleH2};
+   }
 `
 const Gallery = styled.section`
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   padding: 0 20px;
+   padding: 20px;
 `
 
 export default function Projects() {
@@ -35,12 +31,14 @@ export default function Projects() {
 
    return (
       <Main>
-         <Title>Mes projets</Title>
+         <h2>Mes projets</h2>
          <Gallery>
             {ProjetData.map((data) => (
                <Card
                   key={data.id}
                   id={data.id}
+                  img={data.cover}
+                  alt={`projet ${data.title}`}
                   title={data.title}
                   github={data.links.github}
                   web={data.links.web}
