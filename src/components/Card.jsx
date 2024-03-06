@@ -14,6 +14,13 @@ const CardProject = styled.article`
    &:hover {
       box-shadow: 0 0 20px ${colors.white};
    }
+   @media (max-width: 1024px) {
+      width: 40%;
+      margin: 15px;
+   }
+   @media (max-width: 768px) {
+      width: 80%;
+   }
 `
 const Contain = styled.div`
    height: 55px;

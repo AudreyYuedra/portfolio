@@ -12,8 +12,21 @@ const ModalBox = styled.dialog`
    background-color: ${colors.light_black};
    ${mixins.column};
    padding: 15px 30px 40px 30px;
-   &:backdrop {
-      background-color: rgba(255, 255, 255, 0.8);
+   &::backdrop {
+      background-color: ${colors.white};
+      opacity: 0.4;
+      overflow: none;
+   }
+   @media (max-width: 1024px) {
+      width: 70%;
+      top: 10%;
+      left: 10%;
+      margin: 15px;
+   }
+   @media (max-width: 768px) {
+      width: 60%;
+      top: 4%;
+      left: 13%;
    }
    & i {
       display: flex;

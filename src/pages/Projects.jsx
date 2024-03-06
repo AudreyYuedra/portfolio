@@ -9,8 +9,16 @@ import { colors, fontFamily, fontSize } from "../styles/variables"
 import { mixins } from "../styles/mixins"
 const Main = styled.main`
    margin: 70px 0;
+   @media (max-width: 768px) {
+      margin: 30px 0;
+   }
    & h2 {
       ${mixins.titleH2};
+      @media (max-width: 768px) {
+         text-align: center;
+         padding: 0 30px;
+         margin-bottom: 20px;
+      }
    }
 `
 const Gallery = styled.section`
