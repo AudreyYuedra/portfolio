@@ -7,14 +7,28 @@ const Main = styled.main`
    margin: 70px 0;
    ${mixins.column};
    ${mixins.totalCenter};
+   @media (max-width: 768px) {
+      margin: 30px 0;
+   }
    & h2 {
       ${mixins.titleH2};
+      @media (max-width: 768px) {
+         text-align: center;
+         padding: 0 30px;
+         margin-bottom: 20px;
+      }
    }
 `
 const Section = styled.section`
    width: 60%;
    ${mixins.row};
    margin-top: 80px;
+   @media (max-width: 768px) {
+      width: 85%;
+      ${mixins.column};
+      ${mixins.totalCenter};
+      margin-top: 20px;
+   }
 `
 const Img = styled.img`
    width: 230px;
@@ -26,6 +40,9 @@ const Article = styled.article`
    ${mixins.column};
    justify-content: center;
    margin-left: 50px;
+   @media (max-width: 768px) {
+      margin: 50px 0 0 10px;
+   }
    & p {
       margin-bottom: 10px;
       & span {
