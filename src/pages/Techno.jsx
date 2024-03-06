@@ -6,26 +6,44 @@ import { colors, fontFamily, fontSize } from "../styles/variables"
 const Main = styled.main`
    margin: 70px 0;
    ${mixins.column};
+   @media (max-width: 768px) {
+      margin: 30px 0;
+   }
 `
 const ContainCol = styled.section`
    ${mixins.column};
    margin-bottom: 50px;
    & h2 {
       ${mixins.titleH2};
+      @media (max-width: 768px) {
+         text-align: center;
+         padding: 0 30px;
+         margin-bottom: 20px;
+      }
    }
    & p {
       display: flex;
       justify-content: center;
+      @media (max-width: 768px) {
+         margin: 0 30px;
+         text-align: center;
+      }
    }
 `
 const ContainRow = styled.section`
    ${mixins.rowSpaceBetween};
    margin: 0 120px;
+   @media (max-width: 768px) {
+      margin: 0 25px;
+   }
 `
 const SectionTech = styled.article`
    ${mixins.column};
    display: flex;
    align-items: center;
+   @media (max-width: 768px) {
+      width: 40%;
+   }
    & h3 {
       font-family: ${fontFamily.Satisfy};
       color: ${colors.pastel_blue};
@@ -49,6 +67,9 @@ const SectionTech = styled.article`
             display: flex;
             align-self: center;
             padding-left: 10px;
+            @media (max-width: 768px) {
+               padding-left: 5px;
+            }
          }
       }
    }
