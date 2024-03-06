@@ -2,13 +2,21 @@ import { useForm, ValidationError } from "@formspree/react" // Formulaire formsp
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
-import { colors, fontFamily, fontSize } from "../styles/variables"
+import { colors, fontSize } from "../styles/variables"
 const Main = styled.main`
    margin: 70px 0;
    ${mixins.column};
    ${mixins.totalCenter};
+   @media (max-width: 768px) {
+      margin: 30px 0;
+   }
    & h2 {
       ${mixins.titleH2};
+      @media (max-width: 768px) {
+         text-align: center;
+         padding: 0 30px;
+         margin-bottom: 20px;
+      }
    }
 `
 const Accroche = styled.article`
@@ -16,6 +24,10 @@ const Accroche = styled.article`
    align-items: center;
    align-self: center;
    margin: 30px 0 70px 0;
+   @media (max-width: 768px) {
+      text-align: center;
+      margin: 15px 30px 40px 30px;
+   }
    & .dbt {
       color: ${colors.pastel_blue};
       font-weight: 700;
@@ -24,6 +36,12 @@ const Accroche = styled.article`
 const Form = styled.form`
    width: 40%;
    ${mixins.column};
+   @media (max-width: 1024px) {
+      width: 60%;
+   }
+   @media (max-width: 768px) {
+      width: 80%;
+   }
    & p {
       align-self: center;
       font-size: ${fontSize.mini_txt};
