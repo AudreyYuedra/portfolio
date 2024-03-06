@@ -7,25 +7,26 @@ const Main = styled.main`
    margin: 70px 0;
    ${mixins.column};
    ${mixins.totalCenter};
+   & h2 {
+      ${mixins.titleH2};
+   }
 `
-const Title = styled.h2`
-   display: flex;
-   justify-content: center;
-   font-family: ${fontFamily.ff_secondary};
-   font-size: ${fontSize.title};
-   color: ${colors.bg_secondary};
-   margin-bottom: 35px;
-`
-const Accroche = styled.p`
+const Accroche = styled.article`
+   ${mixins.column};
+   align-items: center;
    align-self: center;
-   margin-bottom: 50px;
+   margin: 30px 0 70px 0;
+   & .dbt {
+      color: ${colors.pastel_blue};
+      font-weight: 700;
+   }
 `
 const Form = styled.form`
    width: 40%;
    ${mixins.column};
    & p {
       align-self: center;
-      font-size: ${fontSize.txt_about};
+      font-size: ${fontSize.mini_txt};
       margin-bottom: 10px;
    }
    & div {
@@ -33,20 +34,24 @@ const Form = styled.form`
    }
    & input {
       height: 30px;
-      background-color: ${colors.bg_tertiary};
+      color: ${colors.pastel_blue};
+      background-color: ${colors.light_black};
+      font-size: ${fontSize.subtitle};
       border: none;
       margin-bottom: 10px;
    }
    & textarea {
       height: 200px;
-      background-color: ${colors.bg_tertiary};
+      color: ${colors.pastel_blue};
+      background-color: ${colors.light_black};
+      font-size: ${fontSize.subtitle};
       border: none;
       margin-bottom: 20px;
    }
    & button {
       width: 20%;
       align-self: center;
-      background-color: ${colors.bg_secondary};
+      background-color: ${colors.light_blue};
       border: none;
       padding: 8px;
       border-radius: 15px;
@@ -64,11 +69,11 @@ export default function Contact() {
 
    return (
       <Main>
-         <Title>Contactez-moi !</Title>
+         <h2>Contactez-moi !</h2>
          <Accroche>
-            Vous avez un projet ? N'hésitez pas à utilise le formulaire pour me contacter.
-            <br />
-            Je répondais rapidement et ensemble nous donnerons vie à votre projet.
+            <p className="dbt">Vous avez un projet ?</p>
+            <p>N'hésitez pas à utiliser le formulaire pour me contacter.</p>
+            <p>Je répondais rapidement et ensemble nous donnerons vie à votre projet.</p>
          </Accroche>
 
          <Form onSubmit={handleSubmit}>
