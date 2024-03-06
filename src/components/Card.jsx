@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
@@ -73,12 +75,12 @@ export default function Card({ title, onClick, github, web, img, alt }) {
             <h3>{title}</h3>
             <BoxLinks>
                <i className="fa-solid fa-circle-plus" alt="ouverture de la modale" onClick={onClick}></i>
-               {/*<Link to={github}>*/}
-               <i className="fa-brands fa-github" alt="lien GitHub du projet"></i>
-               {/*</Link>*/}
-               {/*<Link to={web}>*/}
-               <i className="fa-solid fa-link" alt="lien du site du projet"></i>
-               {/*</Link>*/}
+               <Link to={github}>
+                  <i className="fa-brands fa-github" alt="lien GitHub du projet"></i>
+               </Link>
+               <Link to={web}>
+                  <i className="fa-solid fa-link" alt="lien du site du projet"></i>
+               </Link>
             </BoxLinks>
          </Contain>
 

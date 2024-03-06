@@ -1,4 +1,4 @@
-// import { NavLink } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
@@ -25,12 +25,12 @@ const P2 = styled.p`
    left: 10px;
    top: -8px;
 `
-const SlyledLink = styled.ul`
+const SlyledLink = styled.nav`
    display: flex;
    align-items: center;
    list-style-type: none;
-   & li {
-      padding: 0 5px;
+   & a {
+      padding: 0 20px;
       font-family: ${fontFamily.Satisfy};
       color: ${colors.light_blue};
       text-decoration: none;
@@ -64,6 +64,8 @@ const Icon = styled.i`
 `
 
 export default function Header() {
+   const location = useLocation()
+
    return (
       <StickyHeader>
          <Name>
@@ -72,11 +74,21 @@ export default function Header() {
          </Name>
 
          <SlyledLink>
-            {/* <NavLink href="/">Accueil</NavLink>
-            <NavLink href="/About">À Propos</NavLink>
-            <NavLink href="/Projects">Projets</NavLink>
-            <NavLink href="/Techno">Technologies</NavLink>
-   <NavLink href="/Contact">Contact</NavLink> */}
+            <Link to="/" className={location.pathname === "/" ? "current" : ""}>
+               Accueil
+            </Link>
+            <Link to="/About" className={location.pathname === "/About" ? "current" : ""}>
+               À Propos
+            </Link>
+            <Link to="/Projects" className={location.pathname === "/Projects" ? "current" : ""}>
+               Projets
+            </Link>
+            <Link to="/Techno" className={location.pathname === "/Techno" ? "current" : ""}>
+               Technologies
+            </Link>
+            <Link to="/Contact" className={location.pathname === "/Contact" ? "current" : ""}>
+               Contact
+            </Link>
          </SlyledLink>
 
          <NavIcons>
