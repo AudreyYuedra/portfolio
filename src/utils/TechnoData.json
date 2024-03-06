@@ -6,37 +6,37 @@
          {
             "id": "F1",
             "name": "HTML5",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/dn4o.png"
+            "logo": "../assets/Logo/FrontEnd/HTML5.png"
          },
          {
             "id": "F2",
             "name": "CSS3",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/m300.png"
+            "logo": "../assets/Logo/FrontEnd/CSS3.png"
          },
          {
             "id": "F3",
             "name": "Javascript",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/2pe6.png"
+            "logo": "../assets/Logo/FrontEnd/Javascript.png"
          },
          {
             "id": "F4",
             "name": "Sass",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/h050.png"
+            "logo": "../assets/Logo/FrontEnd/SASS.png"
          },
          {
             "id": "F5",
             "name": "React",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/s2r2.png"
+            "logo": "../assets/Logo/FrontEnd/React.png"
          },
          {
             "id": "F6",
             "name": "Redux",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/eh03.png"
+            "logo": "../assets/Logo/FrontEnd/Redux.png"
          },
          {
             "id": "F7",
             "name": "Styled-Components",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/xkvy.png"
+            "logo": "../assets/Logo/FrontEnd/StyledComponents.png"
          }
       ]
    },
@@ -47,12 +47,12 @@
          {
             "id": "B1",
             "name": "Node.js",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/ym0k.png"
+            "logo": "../assets/Logo/BackEnd/Node.js.png"
          },
          {
             "id": "B2",
             "name": "MongoDB",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/er17.png"
+            "logo": "../assets/Logo/BackEnd/MongoDB.png"
          }
       ]
    },
@@ -63,27 +63,27 @@
          {
             "id": "O1",
             "name": "Visual Studio Code",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/occd.png"
+            "logo": "../assets/Logo/Autres/VSC.png"
          },
          {
             "id": "O2",
             "name": "GitHub",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/3wkc.png"
+            "logo": "../assets/Logo/Autres/GitHub.png"
          },
          {
             "id": "O3",
             "name": "Trello",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/a09o.png"
+            "logo": "../assets/Logo/Autres/Trello.png"
          },
          {
             "id": "O4",
             "name": "Figma",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/lpro.png"
+            "logo": "../assets/Logo/Autres/Figma.png"
          },
          {
             "id": "O5",
             "name": "Slack",
-            "logo": "https://zupimages.net/viewer.php?id=24/10/y0dr.png"
+            "logo": "../assets/Logo/Autres/Slack.png"
          }
       ]
    }
