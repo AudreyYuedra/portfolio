@@ -39,6 +39,12 @@ const SlyledLink = styled.ul`
          color: ${colors.pastel_blue};
          text-decoration: none;
       }
+      @media (max-width: 1024px) {
+         font-size: ${fontSize.subtitle};
+      }
+      @media (max-width: 768px) {
+         font-size: 14px;
+      }
    }
    .current {
       color: ${colors.pastel_blue};
