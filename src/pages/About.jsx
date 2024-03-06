@@ -6,23 +6,45 @@ import { mixins } from "../styles/mixins"
 import { colors, fontSize } from "../styles/variables"
 const Main = styled.main`
    margin: 70px 0;
+   @media (max-width: 768px) {
+      margin: 30px 0;
+   }
    & h2 {
       ${mixins.titleH2};
+      @media (max-width: 768px) {
+         text-align: center;
+         padding: 0 30px;
+         margin-bottom: 20px;
+      }
    }
 `
 const ContainerCol = styled.div`
    ${mixins.rowSpaceBetween};
    padding: 10px;
    margin-top: 30px;
+   @media (max-width: 768px) {
+      ${mixins.column};
+   }
 `
 const Perso = styled.section`
    width: 48%;
    ${mixins.column};
    padding: 0 20px 20px 20px;
    border-right: dashed 1px ${colors.dark_grey};
+   @media (max-width: 768px) {
+      width: 100%;
+      padding: 0;
+      border-right: none;
+      border-bottom: dashed 1px ${colors.dark_grey};
+   }
 `
 const Prez = styled.article`
    margin: 90px 20px;
+   @media (max-width: 768px) {
+      margin: 20px 30px;
+      ${mixins.column};
+      justify-content: center;
+   }
    & p {
       margin-bottom: 10px;
    }
@@ -30,9 +52,12 @@ const Prez = styled.article`
 const Italic = styled.p`
    margin-left: 5px;
    font-style: italic;
-}`
+`
 const Scolaire = styled.article`
    margin: 0 0 20px 10px;
+   @media (max-width: 768px) {
+      margin: 20px 30px;
+   }
    & p {
       margin-bottom: 15px;
    }
@@ -43,6 +68,9 @@ const Scolaire = styled.article`
 `
 const Langue = styled.article`
    margin-bottom: 20px;
+   @media (max-width: 768px) {
+      margin: 20px 30px;
+   }
    & p {
       margin-bottom: 10px;
       & span {
@@ -62,6 +90,13 @@ const Pro = styled.section`
    ${mixins.column};
    padding: 0 30px 30px 30px;
    border-left: dashed 1px ${colors.dark_grey};
+   @media (max-width: 768px) {
+      padding: 40px 0 0 0;
+      margin: 0 15px 30px 0;
+      width: 100%;
+      border-left: none;
+      border-top: dashed 1px ${colors.dark_grey};
+   }
 `
 const H3 = styled.h3`
    display: flex;
