@@ -13,6 +13,9 @@ const Main = styled.main`
 const ContainCol = styled.section`
    ${mixins.column};
    margin-bottom: 50px;
+   @media (max-width: 470px) {
+      margin-bottom: 20px;
+   }
    & h2 {
       ${mixins.titleH2};
       @media (max-width: 768px) {
@@ -36,6 +39,10 @@ const ContainRow = styled.section`
    @media (max-width: 768px) {
       margin: 0 25px;
    }
+   @media (max-width: 470px) {
+      ${mixins.column};
+      align-items: center;
+   }
 `
 const SectionTech = styled.article`
    ${mixins.column};
@@ -43,6 +50,9 @@ const SectionTech = styled.article`
    align-items: center;
    @media (max-width: 768px) {
       width: 40%;
+   }
+   @media (max-width: 470px) {
+      margin-bottom: 20px;
    }
    & h3 {
       font-family: ${fontFamily.Satisfy};
