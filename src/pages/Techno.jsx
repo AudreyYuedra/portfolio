@@ -67,11 +67,9 @@ const SectionTech = styled.article`
          display: flex;
          flex-direction: row;
          margin-bottom: 10px;
-         border: solid 2px pink;
          & img {
             width: 50px;
             height: 50px;
-            border: solid 2px yellow;
          }
          & p {
             display: flex;
@@ -86,6 +84,9 @@ const SectionTech = styled.article`
 `
 
 export default function Techno() {
+   const logoPath = TechnoData.image
+   const logoURL = `${process.env.PUBLIC_URL}${logoPath}`
+
    return (
       <Main>
          <ContainCol>
@@ -105,7 +106,7 @@ export default function Techno() {
                   <ul>
                      {index.object.map((data) => (
                         <li key={data.id}>
-                           <img src={data.logo} alt={`logo ${data.name}`} />
+                           <img src={logoURL} alt={`logo ${data.name}`} />
                            <p>{data.name}</p>
                         </li>
                      ))}

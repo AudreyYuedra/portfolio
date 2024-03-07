@@ -39,8 +39,8 @@ export default function Projects() {
 
    const imageCoverPath = ProjetData.cover // chemin de l'image local
    const imagePath = ProjetData.image
-   const imageURL = process.env.PUBLIC_URL + imagePath // construit l'URL complète de l'image
-   const imageCoverURL = process.env.PUBLIC_URL + imageCoverPath
+   const imageURL = `${process.env.PUBLIC_URL}${imagePath}` // construit l'URL complète de l'image
+   const imageCoverURL = `${process.env.PUBLIC_URL}${imageCoverPath}`
 
    return (
       <Main>
