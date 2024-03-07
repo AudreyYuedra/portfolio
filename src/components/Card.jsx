@@ -37,11 +37,13 @@ const Contain = styled.div`
    }
 `
 const BoxLinks = styled.div`
+   height: 25px;
    display: flex;
    justify-content: center;
    margin-top: 8px;
-   padding: 0 15px;
+
    & i {
+      height: 18px;
       color: ${colors.black};
       padding: 0 4px;
       font-size: ${fontSize.subtitle};
@@ -49,6 +51,9 @@ const BoxLinks = styled.div`
          cursor: pointer;
       }
    }
+`
+const StyledLink = styled(Link)`
+   font-size: ${fontSize.subtitle};
 `
 const BGContainer = styled.div`
    width: 100%;
@@ -75,12 +80,12 @@ export default function Card({ title, onClick, github, web, img, alt }) {
             <h3>{title}</h3>
             <BoxLinks>
                <i className="fa-solid fa-circle-plus" alt="ouverture de la modale" onClick={onClick}></i>
-               <Link to={github}>
+               <StyledLink to={github}>
                   <i className="fa-brands fa-github" alt="lien GitHub du projet"></i>
-               </Link>
-               <Link to={web}>
+               </StyledLink>
+               <StyledLink to={web}>
                   <i className="fa-solid fa-link" alt="lien du site du projet"></i>
-               </Link>
+               </StyledLink>
             </BoxLinks>
          </Contain>
 
