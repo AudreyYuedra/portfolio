@@ -11,13 +11,25 @@ const StickyHeader = styled.header`
    align-items: center;
    position: sticky;
    box-shadow: 0 0 25px ${colors.dark_grey};
+   @media (max-width: 470px) {
+      height: 80px;
+   }
 `
 const Name = styled.div`
+   width: 60px;
    height: 50px;
    margin-left: 20px;
+   @media (max-width: 768px) {
+      width: 50px;
+      height: 30px;
+      margin-left: 10px;
+   }
    & p {
       font-family: ${fontFamily.Satisfy};
       font-size: ${fontSize.subtitle};
+      @media (max-width: 768px) {
+         font-size: 14px;
+      }
    }
 `
 const P2 = styled.p`
@@ -29,6 +41,10 @@ const SlyledLink = styled.nav`
    display: flex;
    align-items: center;
    list-style-type: none;
+   @media (max-width: 470px) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
    & a {
       padding: 0 20px;
       font-family: ${fontFamily.Satisfy};
@@ -43,7 +59,11 @@ const SlyledLink = styled.nav`
          font-size: ${fontSize.subtitle};
       }
       @media (max-width: 768px) {
-         font-size: 14px;
+         padding: 0 8px;
+         font-size: 16px;
+      }
+      @media (max-width: 470px) {
+         margin: 5px 0;
       }
    }
    .current {
@@ -55,6 +75,12 @@ const NavIcons = styled.nav`
    margin-right: 20px;
    &:hover {
       cursor: pointer;
+   }
+   @media (max-width: 768px) {
+      margin-right: 10px;
+   }
+   @media (max-width: 470px) {
+      width: 25px;
    }
 `
 const Icon = styled.i`
@@ -92,8 +118,12 @@ export default function Header() {
          </SlyledLink>
 
          <NavIcons>
-            <Icon className="fa-brands fa-github" alt="logo de GitHub"></Icon>
-            <Icon className="fa-brands fa-linkedin" alt="logo de LinkedIn"></Icon>
+            <Link to="https://github.com/AudreyYuedra" target="_blank">
+               <Icon className="fa-brands fa-github" alt="logo de GitHub"></Icon>
+            </Link>
+            <Link to="https://www.linkedin.com/in/audrey-luquet-75113327b/" target="_blank">
+               <Icon className="fa-brands fa-linkedin" alt="logo de LinkedIn"></Icon>
+            </Link>
          </NavIcons>
       </StickyHeader>
    )
