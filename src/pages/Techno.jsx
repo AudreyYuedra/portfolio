@@ -89,8 +89,8 @@ export default function Techno() {
          <ContainRow>
             {/* Sections par catégories */}
             {TechnoData.map((index) => (
-               <SectionTech>
-                  <h3 key={index.id}>{index.category}</h3>
+               <SectionTech key={index.id}>
+                  <h3>{index.category}</h3>
                   {/*liste techno */}
                   <ul>
                      {index.object.map((data) => (
