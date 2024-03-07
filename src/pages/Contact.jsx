@@ -73,6 +73,9 @@ const Form = styled.form`
       border: none;
       padding: 8px;
       border-radius: 15px;
+      @media (max-width: 768px) {
+         min-width: 100px;
+      }
    }
 `
 const InputRow = styled.input`
