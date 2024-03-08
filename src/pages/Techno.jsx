@@ -2,7 +2,7 @@ import TechnoData from "../utils/TechnoData.json"
 
 import styled from "styled-components"
 import { mixins } from "../styles/mixins"
-import { colors, fontFamily, fontSize } from "../styles/variables"
+import { colors, fontFamily } from "../styles/variables"
 const Main = styled.main`
    margin: 70px 0;
    ${mixins.column};
@@ -84,9 +84,6 @@ const SectionTech = styled.article`
 `
 
 export default function Techno() {
-   const logoPath = TechnoData.image
-   const logoURL = `${process.env.PUBLIC_URL}${logoPath}`
-
    return (
       <Main>
          <ContainCol>
@@ -106,7 +103,7 @@ export default function Techno() {
                   <ul>
                      {index.object.map((data) => (
                         <li key={data.id}>
-                           <img src={logoURL} alt={`logo ${data.name}`} />
+                           <img src={data.logo} alt={`logo ${data.name}`} />
                            <p>{data.name}</p>
                         </li>
                      ))}

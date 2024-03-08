@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const CardProject = styled.article`
-   border: solid 2px red;
    width: 25%;
    height: 300px;
    border-radius: 25px;
@@ -59,7 +58,7 @@ const BGContainer = styled.div`
    width: 100%;
    height: 55px;
    background-color: ${colors.pastel_blue};
-   opacity: 0.5;
+   opacity: 0.9;
    padding: 10px;
    z-index: 2;
    border-bottom-left-radius: 25px;

@@ -58,6 +58,7 @@ const Text = styled.p`
 `
 
 export default function Modal({ onClick, data, src }) {
+   console.log("src: ", src)
    return (
       <ModalBox id={data.id}>
          <i className="fa-solid fa-xmark" onClick={onClick}></i>

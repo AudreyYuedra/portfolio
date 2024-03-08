@@ -37,11 +37,6 @@ export default function Projects() {
       setIsOpen(true)
    }
 
-   const imageCoverPath = ProjetData.cover // chemin de l'image local
-   const imagePath = ProjetData.image
-   const imageURL = `${process.env.PUBLIC_URL}${imagePath}` // construit l'URL complète de l'image
-   const imageCoverURL = `${process.env.PUBLIC_URL}${imageCoverPath}`
-
    return (
       <Main>
          <h2>Mes projets</h2>
@@ -50,7 +45,7 @@ export default function Projects() {
                <Card
                   key={data.id}
                   id={data.id}
-                  img={imageCoverURL}
+                  img={data.cover}
                   alt={`projet ${data.title}`}
                   title={data.title}
                   github={data.links.github}
@@ -66,7 +61,8 @@ export default function Projects() {
          ) : (
             <Modal
                data={selectedProject}
-               src={imageURL}
+               {...console.log(selectedProject.image)}
+               src={selectedProject.image}
                onClick={() => {
                   setIsOpen(false)
                }}
