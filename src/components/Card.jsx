@@ -79,10 +79,10 @@ export default function Card({ title, onClick, github, web, img, alt }) {
             <h3>{title}</h3>
             <BoxLinks>
                <i className="fa-solid fa-circle-plus" alt="ouverture de la modale" onClick={onClick}></i>
-               <StyledLink to={github}>
+               <StyledLink to={github} target="_blank">
                   <i className="fa-brands fa-github" alt="lien GitHub du projet"></i>
                </StyledLink>
-               <StyledLink to={web}>
+               <StyledLink to={web} target="_blank">
                   <i className="fa-solid fa-link" alt="lien du site du projet"></i>
                </StyledLink>
             </BoxLinks>

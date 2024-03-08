@@ -26,7 +26,7 @@
       "techno": ["Débogage", "Tests unitaires", "React Dev Tools"],
       "links": {
          "github": "https://github.com/AudreyYuedra/724Events_OC_P10",
-         "web": "https://audreyyuedra.github.io/724Events_OC_P10/"
+         "web": "https://main--724events-ocp10.netlify.app/"
       }
    },
    {
@@ -56,7 +56,7 @@
       "techno": ["React", "SASS", "Animations CSS", "Node.js", "Responsive Web Design", "Figma"],
       "links": {
          "github": "https://github.com/AudreyYuedra/Kasa_OC_P8",
-         "web": "https://audreyyuedra.github.io/Kasa_OC_P8/"
+         "web": "https://master--kasa-ocp8.netlify.app/"
       }
    },
    {
