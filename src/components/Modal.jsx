@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { mixins } from "../styles/mixins"
 import { colors, fontFamily, fontSize } from "../styles/variables"
 const ModalBox = styled.dialog`
-   width: 50%;
+   width: 45%;
    position: absolute;
    top: 10%;
    left: 25%;
@@ -56,9 +56,24 @@ const Text = styled.p`
       margin-left: 15px;
    }
 `
+const Tags = styled.div`
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 15px 70px 0 70px;
+   & p {
+      min-width: 70px;
+      text-align: center;
+      font-size: ${fontSize.subtitle};
+      fon-weight: 700;
+      background-color: ${colors.light_blue};
+      border-radius: 25px;
+      padding: 10px;
+      margin: 10px;
+   }
+`
 
 export default function Modal({ onClick, data, src }) {
-   console.log("src: ", src)
    return (
       <ModalBox id={data.id}>
          <i className="fa-solid fa-xmark" onClick={onClick}></i>
@@ -75,6 +90,11 @@ export default function Modal({ onClick, data, src }) {
             <span>Objectifs : </span>
             {data.goal}
          </Text>
+         <Tags>
+            {data.techno.map((index) => (
+               <p>{index}</p>
+            ))}
+         </Tags>
       </ModalBox>
    )
 }
