@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://audreyyuedra.github.io/portfolio/static/css/main.deeb4b5a.css",
-    "main.js": "https://audreyyuedra.github.io/portfolio/static/js/main.adab9de2.js",
-    "static/media/Photo_Profil.webp": "https://audreyyuedra.github.io/portfolio/static/media/Photo_Profil.6f6be1eb0b9a9313bcd1.webp",
-    "index.html": "https://audreyyuedra.github.io/portfolio/index.html",
-    "main.deeb4b5a.css.map": "https://audreyyuedra.github.io/portfolio/static/css/main.deeb4b5a.css.map",
-    "main.adab9de2.js.map": "https://audreyyuedra.github.io/portfolio/static/js/main.adab9de2.js.map"
+    "main.css": "/portfolio/static/css/main.deeb4b5a.css",
+    "main.js": "/portfolio/static/js/main.d4d68bc7.js",
+    "static/media/Photo_Profil.webp": "/portfolio/static/media/Photo_Profil.6f6be1eb0b9a9313bcd1.webp",
+    "index.html": "/portfolio/index.html",
+    "main.deeb4b5a.css.map": "/portfolio/static/css/main.deeb4b5a.css.map",
+    "main.d4d68bc7.js.map": "/portfolio/static/js/main.d4d68bc7.js.map"
   },
   "entrypoints": [
     "static/css/main.deeb4b5a.css",
-    "static/js/main.adab9de2.js"
+    "static/js/main.d4d68bc7.js"
   ]
 }
