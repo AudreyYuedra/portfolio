@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import ReactDOM from "react-dom/client"
 
 import Header from "./components/Header"
@@ -14,7 +14,7 @@ import "./styles/style.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-   <Router>
+   <HashRouter>
       <Header />
       <Routes>
          <Route path="/" element={<Home />} />
@@ -25,5 +25,5 @@ root.render(
          <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-   </Router>
+   </HashRouter>
 )
